@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Practice Mongoose app </title>
+  </head>
+  <body>
+
+
+    <a href="/owls/new"> Add Owl</a>
+    <% for(i in users){ %>
+      <p><%= users[i]  %></p><a href="/owls/<%= users[i]._id %>">Show User</a>
+      <a href="/owls/<%= users[i]._id %>/edit">Edit User</a>
+      <form action="/owls/<%= users[i]._id %>/delete" method="post">
+        <input type="submit" name="delete" value="delete">
+      </form>
+    <% } %>
+  </body>
+</html>
