@@ -1,6 +1,7 @@
 {
   "name": "july_demo",
   "dependencies": {
+    "angular": "^1.5.7",
     "body-parser": "^1.15.2",
     "ejs": "^1.0.0",
     "express": "^4.10.8",
